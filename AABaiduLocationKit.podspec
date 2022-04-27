@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AABaiduLocationKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AABaiduLocationKit.'
+  s.version          = '2.0.2'
+  s.summary          = '百度定位sdk，解决官方sdk在组件化中无法引入的问题'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,15 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/wangdean/AABaiduLocationKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'AABaiduLocationKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'AABaiduLocationKit' => ['AABaiduLocationKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#  s.source_files  = "AABaiduLocationKit/framework/*.framework/Headers/*.h"
+  s.public_header_files = "AABaiduLocationKit/framework/*.framework/Headers/*.h"
+  s.vendored_frameworks = "AABaiduLocationKit/framework/*.framework"
+  s.frameworks = "CoreLocation", "Foundation", "UIKit", "SystemConfiguration", "AdSupport", "Security", "CoreTelephony"
+  s.libraries = "sqlite3.0","c++"
 end
