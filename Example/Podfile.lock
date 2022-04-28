@@ -1,0 +1,16 @@
+PODS:
+  - AABaiduLocationKit (2.0.2)
+
+DEPENDENCIES:
+  - AABaiduLocationKit (from `../`)
+
+EXTERNAL SOURCES:
+  AABaiduLocationKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AABaiduLocationKit: 662ecbac62cbea29de2cc307461f5eb29dc4b54b
+
+PODFILE CHECKSUM: f4f46d251a0361228c91f33e53987506c7f06688
+
+COCOAPODS: 1.11.2

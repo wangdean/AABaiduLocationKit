@@ -1,0 +1,6 @@
+framework module AABaiduLocationKit {
+  umbrella header "AABaiduLocationKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

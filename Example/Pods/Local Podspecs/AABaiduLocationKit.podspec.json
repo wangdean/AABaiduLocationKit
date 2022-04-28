@@ -1,0 +1,42 @@
+{
+  "name": "AABaiduLocationKit",
+  "version": "2.0.2",
+  "summary": "百度定位sdk，解决官方sdk在组件化中无法引入的问题",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangdean/AABaiduLocationKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangdean": "404926036@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wangdean/AABaiduLocationKit.git",
+    "tag": "2.0.2"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": [
+    "AABaiduLocationKit/Classes/**/*",
+    "AABaiduLocationKit/framework/*.framework/Headers/*.h"
+  ],
+  "public_header_files": "AABaiduLocationKit/framework/*.framework/Headers/*.h",
+  "vendored_frameworks": "AABaiduLocationKit/framework/*.framework",
+  "vendored_libraries": "AABaiduLocationKit/framework/thirdlibs/*.a",
+  "frameworks": [
+    "CoreLocation",
+    "Foundation",
+    "UIKit",
+    "SystemConfiguration",
+    "AdSupport",
+    "Security",
+    "CoreTelephony"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "c++"
+  ],
+  "requires_arc": true
+}
